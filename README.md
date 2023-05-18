@@ -2,7 +2,7 @@
 
 A Discord.js bot that lets users remove media they've finished watching from Plex, giving them direct control over media they request. 
 
-![Image of a list of requested media items with IDs](https://github.com/zer0ney/LilTequila/assets/19390566/a8cd2409-7e95-4fd4-871d-371913abf808)
+![Screenshot 2023-05-18 223130](https://github.com/zer0ney/LilTequila/assets/19390566/d0021776-fbab-4db9-ad21-608b5a6508ab)
 
 ## Requirements
 
@@ -26,11 +26,11 @@ FWIW: The bot's only designed for use on a single server.
 
 You'll now need to add your users to the bot. Get their Discord ID from Discord ([here's how](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-)) and their Overseerr ID from their user's profile in Overseerr:
 
-![Image of Overseerr profile](https://github.com/zer0ney/LilTequila/assets/19390566/90aad137-e079-4f66-8143-0c3e9eb06716)
+![firefox_3Nrbk5us4b](https://github.com/zer0ney/LilTequila/assets/19390566/6deab4cd-50c5-4c2e-a9a2-83a5220f130e)
 
 Now you can use `/add-user` to add your users:
 
-![Screenshot of Discord Command](https://github.com/zer0ney/LilTequila/assets/19390566/60f89b5b-39aa-487b-8ded-1862a5455699)
+![Screenshot 2023-05-18 234111](https://github.com/zer0ney/LilTequila/assets/19390566/43a76915-571f-4830-8737-943670695997)
 
 You can double check the user is registered in the bot with `/show-users`.
 
