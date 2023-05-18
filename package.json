@@ -12,7 +12,6 @@
   "dependencies": {
     "discord.js": "^14.7.1",
     "dotenv": "^16.0.3",
-    "openai": "^3.2.1",
     "sequelize": "^6.29.3",
     "sqlite3": "^5.1.4",
     "undici": "^5.20.0"
