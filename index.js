@@ -24,6 +24,11 @@ const Tags = sequelize.define('tags', {
 	discord_id: Sequelize.INTEGER,
 	overseerr_id: Sequelize.INTEGER,
 });
+
+const ReturnedResults = sequelize.define('returnedResults', {
+	discord_id: Sequelize.INTEGER,
+	data: Sequelize.STRING,
+});
 // -----------------------------
 
 
@@ -56,7 +61,7 @@ client.on(Events.InteractionCreate, async interaction => {
 		}
 
 		try {
-			return await command.execute(interaction, Tags);
+			return await command.execute(interaction, Tags, ReturnedResults);
 		} catch (error) {
 			console.error(error);
 			if (interaction.replied || interaction.deferred) {
@@ -70,7 +75,7 @@ client.on(Events.InteractionCreate, async interaction => {
 		// still very dumb though
 		if (interaction.customId.includes('media')) {
 			const command = interaction.client.commands.get('show-media');
-			await command.execute(interaction, Tags);
+			await command.execute(interaction, Tags, ReturnedResults);
 		}
 		if (interaction.customId.includes('remove')) {
 			const command = interaction.client.commands.get('remove-media');
@@ -82,6 +87,7 @@ client.on(Events.InteractionCreate, async interaction => {
 // connect and set clientready to c to differentiate from existing Client var
 client.once(Events.ClientReady, c => {
 	Tags.sync();
+	ReturnedResults.sync();
 	console.log(`Ready! Logged in as ${c.user.tag}`);
 });
 

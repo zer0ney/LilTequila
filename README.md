@@ -21,7 +21,7 @@ FWIW: The bot's only designed for use on a single server.
 - Open `example.env` and change all of the fields as required, then rename the file to `.env`.
 - Open up a command prompt and navigate to the folder where the bot is.
 - Run `npm install` and wait for the dependencies to install.
-- Run `node refreshCommands.js`. You should see output stating `Successfully reloaded 5 application (/) commands.`
+- Run `node utilities/refreshCommands.js`. You should see output stating `Successfully reloaded 5 application (/) commands.`
 - Now run `node index.js` - your bot should come online in your server!
 
 You'll now need to add your users to the bot. Get their Discord ID from Discord ([here's how](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-)) and their Overseerr ID from their user's profile in Overseerr:
