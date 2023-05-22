@@ -8,9 +8,8 @@ module.exports = {
 		.setDescription('Shows your requested media.'),
 	async execute(interaction, Tags, ReturnedResults) {
 
-		// this only triggers if we get a button response, so initial message means this is skipped
-
 		if (interaction.isButton()) {
+			// this only triggers if we get a button response, so initial message means this is skipped
 
 			await interaction.update({ content: `Loading...`, embeds: [], components: [], ephemeral: true });
 
