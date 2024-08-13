@@ -1,4 +1,4 @@
-# 😵‍💫:tumbler_glass: Lil Tequila 🌅🏖️
+# 😵‍💫🥃 Lil Tequila 🌅🏖️
 
 A Discord.js bot that lets users remove media they've finished watching from Plex as well as the original requests from Overseerr/Sonarr/Radarr, giving them direct control over media they request. 
 
